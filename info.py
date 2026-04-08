@@ -34,10 +34,10 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/2518d4eb8c88f8f669f4c.jpg https://graph.org/file/d6d9d9b8d2dc779c49572.jpg https://graph.org/file/4b04eaad1e75e13e6dc08.jpg https://graph.org/file/05066f124a4ac500f8d91.jpg https://graph.org/file/2c64ed483c8fcf2bab7dd.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/549fd9f3272214acade82.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/6988f560cf6d67339f628.jpg")
-SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/549fd9f3272214acade82.jpg")
+PICS = (environ.get('PICS', 'https://files.catbox.moe/8ohegp.jpg https://files.catbox.moe/27h1k6.jpg https://files.catbox.moe/n2aphp.jpg https://files.catbox.moe/b6vtfh.jpg https://files.catbox.moe/a64p4e.jpg')).split() #SAMPLE PIC
+NOR_IMG = environ.get("NOR_IMG", "https://files.catbox.moe/a64p4e.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://files.catbox.moe/2plvkb.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://files.catbox.moe/n2aphp.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/347c1f79f36d3cf14e0f5.jpg'))
 CODE = (environ.get('CODE', 'https://graph.org/file/02e7ecc3e2693b481b914.jpg'))
 REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1c1a3cb814cd719ae3bd3.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
