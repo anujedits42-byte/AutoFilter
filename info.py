@@ -40,7 +40,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://files.catbox.moe/2plvkb.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://files.catbox.moe/n2aphp.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://files.catbox.moe/6hyvy7.jpg'))
 CODE = (environ.get('CODE', 'https://files.catbox.moe/6hyvy7.jpg'))
-REFER_PICS = (environ.get("REFER_PICS", "https://graph.org/file/1c1a3cb814cd719ae3bd3.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
+REFER_PICS = (environ.get("REFER_PICS", "https://files.catbox.moe/adxsvi.jpg https://graph.org/file/1a2e64aee3d4d10edd930.jpg")).split()
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', ''))
