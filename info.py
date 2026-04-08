@@ -25,10 +25,10 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21188057'))
-API_HASH = environ.get('API_HASH', '8564fab8db759bb04b1907bd12ed98ef')
-OWNER_ID = environ.get('OWNER_ID', '6976744562')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '34446649'))
+API_HASH = environ.get('API_HASH', '8dc570c08d8e35e88fb9bfc73c65d7fa')
+OWNER_ID = environ.get('OWNER_ID', '7892805795')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8316257309:AAE5YwqihA7JaCBo6I6sPYP6WuCNG4t-Q2w")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -51,20 +51,20 @@ STREAMHTO = (environ.get('STREAMHTO', ''))
 COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 PREFIX = environ.get("PREFIX", "/")
 
-CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1002329322641"))
+CHAT_GROUP = int(environ.get("CHAT_GROUP", "-1003791508617"))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6964538561').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1002238603343 1002198886089').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7892805795').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1003791508617 1003515041061').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '1002238603343') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '1003791508617') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002329322641') # support group id ( make sure bot is admin )
-reqst_channel = environ.get('REQST_CHANNEL_ID', '1002400133611') # request channel id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1003515041061') # support group id ( make sure bot is admin )
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1003515041061') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False)) # True if you want no results messages in Log Channel
@@ -85,16 +85,16 @@ AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANN
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @codflix_bots</b>")
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @anujedits76</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Referal Settings
 REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal count
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1 week')
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'sewxiy') # owner username without @
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'anujedits76') # owner username without @
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002400133611')) #Log channel id ( make sure bot is admin )
-DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1002400133611'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003515041061')) #Log channel id ( make sure bot is admin )
+DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1003515041061'))
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
@@ -108,17 +108,17 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Mm_RM_Rbot")
-BOT_NAME = environ.get("BOT_NAME", "MM R Bot")
+BOT_USERNAME = environ.get("BOT_USERNAME", "auto_filter_ak_bot")
+BOT_NAME = environ.get("BOT_NAME", "Auto Filter Bot")
 BOT_ID = environ.get("BOT_ID", "")
-S_GROUP = environ.get('S_GROUP', "RM_Support_Group")
-S_CHANNEL = environ.get('S_CHANNEL', "RM_Movie_Flix")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/RM_Movie_Request')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/RM_Movie_Flix')
+S_GROUP = environ.get('S_GROUP', "anuj_group_channel")
+S_CHANNEL = environ.get('S_CHANNEL', "log_channel_a")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/anuj_group_channel')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/log_channel_a')
 TUTORIAL = environ.get('TUTORIAL', '') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ᴄᴏᴅᴇғʟɪx ʙᴏᴛs')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/RM_Support_Group') #Support group link ( make sure bot is admin )
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : 𝐀𝐍𝐔𝐉 𝐊𝐔𝐌𝐀𝐑')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/anuj_group_channel') #Support group link ( make sure bot is admin )
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -131,7 +131,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002400133611')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1003791508617')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
